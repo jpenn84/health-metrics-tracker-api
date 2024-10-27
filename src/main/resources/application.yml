@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: health-metrics-tracker-api
+  datasource:
+    url: jdbc:mariadb://${DB_ADDRESS}:${DB_PORT}/Health_Metrics
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    show-sql: ${JPA_SHOW_SQL:false}
+    defer-datasource-initialization: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      mode: always
+  mvc:
+    format:
+      date-time: iso
