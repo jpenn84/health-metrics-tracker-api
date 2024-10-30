@@ -21,12 +21,10 @@ My original purpose for creating this app is to track my post-surgery vitals aft
 
 ## Environment Variables
 
-`DB_ADDRESS` - The address of the mariadb server
+`SPRING_DATASOURCE_URL` - Database URL
 
-`DB_PORT` - The port of the mariadb server
+`SPRING_DATASOURCE_USERNAME` - Database Username
 
-`DB_USERNAME` - The database user
+`SPRING_DATASOURCE_PASSWORD` - Database Password
 
-`DB_PASSWORD` - The database user's password
-
-`JPA_SHOW_SQL` - Boolean to show JPA queries. Default is false.
+`SPRING_JPA_SHOW-SQL` - Boolean to show JPA queries.
